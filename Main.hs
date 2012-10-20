@@ -12,7 +12,7 @@ main = do
   GLUT.displayCallback GLUT.$= display rot
   GLUT.reshapeCallback GLUT.$= Just reshape
   GLUT.depthFunc GLUT.$= Just GLUT.Less
-  GLUT.idleCallback GLUT.$= Just (increaseRot rot 0.02)
+  GLUT.idleCallback GLUT.$= Just (increaseRot rot 0.5)
   GLUT.mainLoop
 
 green = GLUT.Color3 (0::GLUT.GLfloat) 1 0
